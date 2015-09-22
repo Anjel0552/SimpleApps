@@ -24,9 +24,12 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="a4E-Wa-i8s" secondAttribute="height" multiplier="2:1" id="D23-uy-DX2"/>
                                 </constraints>
-                                <state key="normal" title="                    0"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="33"/>
+                                <state key="normal" title="             0">
+                                    <color key="titleColor" red="0.0" green="0.063164196170000006" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
-                                    <action selector="pressZero:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UFu-HY-2t3"/>
+                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sV7-Xi-Tzd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nDB-UB-TKM">
@@ -46,14 +49,14 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Efe-V3-EyD">
                                 <rect key="frame" x="240" y="488" width="80" height="80"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Efe-V3-EyD" secondAttribute="height" multiplier="1:1" id="ETu-L5-HSR"/>
                                     <constraint firstAttribute="width" secondItem="Efe-V3-EyD" secondAttribute="height" multiplier="1:1" id="dgn-96-8JL"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="40"/>
                                 <state key="normal" title="=">
-                                    <color key="titleColor" red="0.17903542419999999" green="1" blue="0.62740342429999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.063164196170000006" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -61,6 +64,9 @@
                                         <exclude reference="dgn-96-8JL"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="runOperation" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oo9-5D-PTT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WoC-5T-p6d">
                                 <rect key="frame" x="0.0" y="408" width="80" height="80"/>
@@ -70,7 +76,10 @@
                                     <constraint firstAttribute="width" secondItem="WoC-5T-p6d" secondAttribute="height" multiplier="1:1" id="obU-g0-6YY"/>
                                     <constraint firstAttribute="width" secondItem="WoC-5T-p6d" secondAttribute="height" multiplier="1:1" id="rOj-YY-Kg5"/>
                                 </constraints>
-                                <state key="normal" title="1"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="40"/>
+                                <state key="normal" title="1">
+                                    <color key="titleColor" red="0.0" green="0.063164196170000006" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="obU-g0-6YY"/>
@@ -78,7 +87,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <action selector="pressOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WAD-rv-8HN"/>
+                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i89-Nf-4v2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gph-9K-uLc">
@@ -89,7 +98,10 @@
                                     <constraint firstAttribute="width" secondItem="gph-9K-uLc" secondAttribute="height" multiplier="1:1" id="UHT-qy-GFN"/>
                                     <constraint firstAttribute="width" secondItem="gph-9K-uLc" secondAttribute="height" multiplier="1:1" id="it8-Do-ngK"/>
                                 </constraints>
-                                <state key="normal" title="2"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="40"/>
+                                <state key="normal" title="2">
+                                    <color key="titleColor" red="0.0" green="0.063164196170000006" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="TbM-j4-kVy"/>
@@ -97,7 +109,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <action selector="pressTwo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tav-Qk-Gcl"/>
+                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Slx-O6-haT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTz-2G-uRW">
@@ -108,7 +120,10 @@
                                     <constraint firstAttribute="width" secondItem="aTz-2G-uRW" secondAttribute="height" multiplier="1:1" id="Oqy-w0-kad"/>
                                     <constraint firstAttribute="width" secondItem="aTz-2G-uRW" secondAttribute="height" multiplier="1:1" id="V4q-HL-lpG"/>
                                 </constraints>
-                                <state key="normal" title="3"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="40"/>
+                                <state key="normal" title="3">
+                                    <color key="titleColor" red="0.0" green="0.063164196170000006" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="LZc-oe-mKY"/>
@@ -116,20 +131,20 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <action selector="pressThree:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o7P-Gc-MkR"/>
+                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t8m-FV-eVf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N3z-sF-Q1o">
                                 <rect key="frame" x="240" y="408" width="80" height="80"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="N3z-sF-Q1o" secondAttribute="height" multiplier="1:1" id="384-vM-IeJ"/>
                                     <constraint firstAttribute="width" secondItem="N3z-sF-Q1o" secondAttribute="height" multiplier="1:1" id="imS-qb-qAv"/>
                                     <constraint firstAttribute="width" secondItem="N3z-sF-Q1o" secondAttribute="height" multiplier="1:1" id="kbC-Bg-6gI"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="40"/>
                                 <state key="normal" title="-">
-                                    <color key="titleColor" red="0.17903542419999999" green="1" blue="0.62740342429999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.063164196170000006" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -137,6 +152,9 @@
                                         <exclude reference="kbC-Bg-6gI"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="setOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lGj-HU-Wr8"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPm-ml-Jfa">
                                 <rect key="frame" x="80" y="328" width="80" height="80"/>
@@ -146,7 +164,10 @@
                                     <constraint firstAttribute="width" secondItem="dPm-ml-Jfa" secondAttribute="height" multiplier="1:1" id="HaO-Ls-PS6"/>
                                     <constraint firstAttribute="width" secondItem="dPm-ml-Jfa" secondAttribute="height" multiplier="1:1" id="Kfs-SX-eiu"/>
                                 </constraints>
-                                <state key="normal" title="5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="40"/>
+                                <state key="normal" title="5">
+                                    <color key="titleColor" red="0.0" green="0.063164196170000006" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="1os-GT-DVw"/>
@@ -155,7 +176,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <action selector="pressFive:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QqC-L5-yFe"/>
+                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dKK-I5-Xgb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kto-w3-viA">
@@ -166,7 +187,10 @@
                                     <constraint firstAttribute="width" secondItem="kto-w3-viA" secondAttribute="height" multiplier="1:1" id="FCr-kq-Oss"/>
                                     <constraint firstAttribute="width" secondItem="kto-w3-viA" secondAttribute="height" multiplier="1:1" id="uJo-yJ-Ds2"/>
                                 </constraints>
-                                <state key="normal" title="6"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="40"/>
+                                <state key="normal" title="6">
+                                    <color key="titleColor" red="0.0" green="0.063164196170000006" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="Azl-j3-6bl"/>
@@ -175,20 +199,20 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <action selector="pressSix:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fGy-6X-h8X"/>
+                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vge-6R-4tG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ef-n7-l5z">
                                 <rect key="frame" x="240" y="328" width="80" height="80"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="4Ef-n7-l5z" secondAttribute="height" multiplier="1:1" id="Kax-dk-aiY"/>
                                     <constraint firstAttribute="width" secondItem="4Ef-n7-l5z" secondAttribute="height" multiplier="1:1" id="ilc-Zh-JEz"/>
                                     <constraint firstAttribute="width" secondItem="4Ef-n7-l5z" secondAttribute="height" multiplier="1:1" id="sRM-LZ-uIX"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="40"/>
                                 <state key="normal" title="+">
-                                    <color key="titleColor" red="0.17903542419999999" green="1" blue="0.62740342429999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.063164196170000006" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -197,6 +221,9 @@
                                         <exclude reference="sRM-LZ-uIX"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="setOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2gv-rj-0nV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SXh-fv-gcZ">
                                 <rect key="frame" x="0.0" y="248" width="80" height="80"/>
@@ -206,7 +233,10 @@
                                     <constraint firstAttribute="width" secondItem="SXh-fv-gcZ" secondAttribute="height" multiplier="1:1" id="HPi-13-R0u"/>
                                     <constraint firstAttribute="width" secondItem="SXh-fv-gcZ" secondAttribute="height" multiplier="1:1" id="ogZ-F4-eaw"/>
                                 </constraints>
-                                <state key="normal" title="7"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="40"/>
+                                <state key="normal" title="7">
+                                    <color key="titleColor" red="0.0" green="0.063164196170000006" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="GoK-kT-1Ln"/>
@@ -215,7 +245,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <action selector="pressSeven:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EPE-1j-wIC"/>
+                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fKL-H9-JYp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5vK-hk-PR0">
@@ -226,7 +256,10 @@
                                     <constraint firstAttribute="width" secondItem="5vK-hk-PR0" secondAttribute="height" multiplier="1:1" id="iiq-sn-1hS"/>
                                     <constraint firstAttribute="width" secondItem="5vK-hk-PR0" secondAttribute="height" multiplier="1:1" id="v8n-ZH-RHt"/>
                                 </constraints>
-                                <state key="normal" title="8"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="40"/>
+                                <state key="normal" title="8">
+                                    <color key="titleColor" red="0.0" green="0.063164196170000006" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="SOZ-e5-m79"/>
@@ -235,7 +268,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <action selector="pressEight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nuE-JA-nae"/>
+                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GI5-kI-d4T"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Du-5G-SPR">
@@ -246,7 +279,10 @@
                                     <constraint firstAttribute="width" secondItem="9Du-5G-SPR" secondAttribute="height" multiplier="1:1" id="Dqi-p3-Kbx"/>
                                     <constraint firstAttribute="width" secondItem="9Du-5G-SPR" secondAttribute="height" multiplier="1:1" id="kfh-p3-6De"/>
                                 </constraints>
-                                <state key="normal" title="9"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="40"/>
+                                <state key="normal" title="9">
+                                    <color key="titleColor" red="0.0" green="0.063164196170000006" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="3fU-we-Jq0"/>
@@ -255,20 +291,20 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <action selector="pressNine:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VXZ-9x-xFm"/>
+                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f8C-To-is2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TuE-Fd-2N4">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TuE-Fd-2N4">
                                 <rect key="frame" x="240" y="248" width="80" height="80"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="TuE-Fd-2N4" secondAttribute="height" multiplier="1:1" id="4DG-nf-FRg"/>
                                     <constraint firstAttribute="width" secondItem="TuE-Fd-2N4" secondAttribute="height" multiplier="1:1" id="giO-d7-ymT"/>
                                     <constraint firstAttribute="width" secondItem="TuE-Fd-2N4" secondAttribute="height" multiplier="1:1" id="hx2-jF-S54"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="40"/>
                                 <state key="normal" title="x">
-                                    <color key="titleColor" red="0.17903542419999999" green="1" blue="0.62740342429999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.063164196170000006" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -277,6 +313,9 @@
                                         <exclude reference="hx2-jF-S54"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="setOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Fz-6x-fB0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBe-Fw-vlN">
                                 <rect key="frame" x="0.0" y="168" width="80" height="80"/>
@@ -286,7 +325,10 @@
                                     <constraint firstAttribute="width" secondItem="nBe-Fw-vlN" secondAttribute="height" multiplier="1:1" id="5le-0h-4FO"/>
                                     <constraint firstAttribute="width" secondItem="nBe-Fw-vlN" secondAttribute="height" multiplier="1:1" id="WXq-0D-N3R"/>
                                 </constraints>
-                                <state key="normal" title="AC"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="40"/>
+                                <state key="normal" title="AC">
+                                    <color key="titleColor" red="0.0" green="0.063164196170000006" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="05p-Mm-q4J"/>
@@ -294,6 +336,9 @@
                                         <exclude reference="WXq-0D-N3R"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="clear" destination="BYZ-38-t0r" eventType="touchUpInside" id="160-t7-D9W"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPe-o8-hbu">
                                 <rect key="frame" x="80" y="168" width="80" height="80"/>
@@ -303,14 +348,20 @@
                                     <constraint firstAttribute="width" secondItem="mPe-o8-hbu" secondAttribute="height" multiplier="1:1" id="IZq-qr-myB"/>
                                     <constraint firstAttribute="width" secondItem="mPe-o8-hbu" secondAttribute="height" multiplier="1:1" id="cO6-7e-QDG"/>
                                 </constraints>
-                                <state key="normal" title="+/-"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="40"/>
+                                <state key="normal" title="+/-">
+                                    <color key="titleColor" red="0.0" green="0.063164196170000006" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="IZq-qr-myB"/>
                                         <exclude reference="7lK-Z5-na0"/>
+                                        <exclude reference="IZq-qr-myB"/>
                                         <exclude reference="cO6-7e-QDG"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="changeSign" destination="BYZ-38-t0r" eventType="touchUpInside" id="W9k-73-EsX"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HVh-mk-j1g">
                                 <rect key="frame" x="160" y="168" width="80" height="80"/>
@@ -320,34 +371,43 @@
                                     <constraint firstAttribute="width" secondItem="HVh-mk-j1g" secondAttribute="height" multiplier="1:1" id="Hmc-8Z-h3x"/>
                                     <constraint firstAttribute="width" secondItem="HVh-mk-j1g" secondAttribute="height" multiplier="1:1" id="Mb2-ZL-eUN"/>
                                 </constraints>
-                                <state key="normal" title="%"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="40"/>
+                                <state key="normal" title="%">
+                                    <color key="titleColor" red="0.0" green="0.063164196170000006" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="Cg2-Le-bUN"/>
-                                        <exclude reference="Mb2-ZL-eUN"/>
                                         <exclude reference="Hmc-8Z-h3x"/>
+                                        <exclude reference="Mb2-ZL-eUN"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="setOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AuS-69-fCH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Epo-Uy-1Gq">
                                 <rect key="frame" x="240" y="168" width="80" height="80"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Epo-Uy-1Gq" secondAttribute="height" multiplier="1:1" id="EA8-G7-lAP"/>
                                     <constraint firstAttribute="width" secondItem="Epo-Uy-1Gq" secondAttribute="height" multiplier="1:1" id="bCV-lr-HQ8"/>
                                     <constraint firstAttribute="width" secondItem="Epo-Uy-1Gq" secondAttribute="height" multiplier="1:1" id="rAv-81-tmU"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="40"/>
                                 <state key="normal" title="/">
-                                    <color key="titleColor" red="0.17903542419999999" green="1" blue="0.62740342429999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.063164196170000006" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="rAv-81-tmU"/>
                                         <exclude reference="EA8-G7-lAP"/>
                                         <exclude reference="bCV-lr-HQ8"/>
+                                        <exclude reference="rAv-81-tmU"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="setOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cnp-HW-6io"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JcH-Cr-la4">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="168"/>
@@ -377,7 +437,10 @@
                                     <constraint firstAttribute="width" secondItem="4mo-sn-xdU" secondAttribute="height" multiplier="1:1" id="dQA-1T-RXk"/>
                                     <constraint firstAttribute="width" secondItem="4mo-sn-xdU" secondAttribute="height" multiplier="1:1" id="hMi-6D-xc6"/>
                                 </constraints>
-                                <state key="normal" title="4"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="40"/>
+                                <state key="normal" title="4">
+                                    <color key="titleColor" red="0.0" green="0.063164196170000006" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="95l-df-BZZ"/>
@@ -386,7 +449,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <action selector="pressFour:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XkA-3b-bVe"/>
+                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YH1-5y-e1a"/>
                                 </connections>
                             </button>
                         </subviews>
