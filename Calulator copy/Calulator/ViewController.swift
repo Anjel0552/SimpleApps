@@ -14,7 +14,6 @@ var operation: OperationType?
 
 // normal
 //change the sign +/-
-//remove the decimal if .0
 
 //medium:
 //add label on the left side of display to show current operation
@@ -58,6 +57,8 @@ class ViewController: UIViewController {
     @IBAction func changeSign() {
         
         
+        
+        
     }
     
     @IBAction func setOperation(button: UIButton) {
@@ -70,17 +71,20 @@ class ViewController: UIViewController {
     }
     
     @IBAction func runOperation() {
-        
+
         let num1 = Double(number1)
         let num2 = Double(number2)
         
+        
         let total = calculateNumbers(n1: num1!, n2: num2!, operation: operation!)
         
+
+        
+        displayLabel.text = (total % 1 == 0) ? "\(Int(total))" : "\(total)"
+        
+        
         number1 = "\(total)"
-        displayLabel.text = "\(total)"
-        
         
 
-    }
 }
-
+}
