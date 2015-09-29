@@ -59,7 +59,7 @@ class ViewController: UIViewController {
             
             }
         
-        }        
+        }
         
     
 //        let button1 = TTTButton(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
@@ -140,18 +140,14 @@ class ViewController: UIViewController {
         
         print("button works")
         
-        if button.player == 0 {
-            
-            button.player = isPlayer1Turn ? 1 : 2
-            
-            grid[button.row][button.col] = isPlayer1Turn ? 1 : 2
-            
-            isPlayer1Turn = !isPlayer1Turn
-            
-            checkForWinner()
+        button.player = isPlayer1Turn ? 1 : 2
+        
+        grid[button.row][button.col] = isPlayer1Turn ? 1 : 2
+        
+        isPlayer1Turn = !isPlayer1Turn
         
         
-        }
+        
     }
     
     func checkForWinner() {
@@ -181,25 +177,11 @@ class ViewController: UIViewController {
             let value2 = grid[p2.0][p2.1]
             let value3 = grid[p3.0][p3.1]
             
-            if value1 == value2 && value2 == value3 {
+            if value1 == value2 && value2 == vaule3 {
             
             
-                if value1 != 0 {
-                
-                    // someone won
-                    print("Player \(value1) Wins")
-                
-                }  else {
-                    
-                    print("all zeros")
-                    
-                }
+                if value1 != 0
             
-            } else {
-                
-                print("does not match")
-                
-                
             }
         
         }
