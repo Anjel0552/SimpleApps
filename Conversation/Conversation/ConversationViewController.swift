@@ -10,16 +10,16 @@ import UIKit
 import Parse
 
 class ConversationViewController: UIViewController {
-
+    
     @IBOutlet weak var tableView: UITableView!
-
+    
     @IBOutlet weak var messageField: UITextField!
     
     
     var user: PFUser! {
-    
-        didSet {
         
+        didSet {
+            
             guard let me = PFUser.currentUser() else { return }
             
             let messageQuery = PFQuery(className: "Message")
@@ -30,7 +30,7 @@ class ConversationViewController: UIViewController {
             messageQuery.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
                 
                 self.messages = objects ?? []
-                
+                self.tableView.reloadData()
                 // TODO: reload table view
             }
         }
@@ -40,24 +40,62 @@ class ConversationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func sendMessage(sender: AnyObject) {
+        
+        guard let content = messageField.text where !content.isEmpty else { return }
+        
+        let message = PFObject(className: "Message")
+        
+        message["sender"] = PFUser.currentUser()
+        message["receiver"] = user
+        message["content"] = messageField.text
+        
+        message.saveInBackgroundWithBlock { (succeeded, error) -> Void in
+            
+            // Find devices associated with these users
+            let pushQuery = PFInstallation.query()
+            pushQuery?.whereKey("user", equalTo: self.user)
+            
+            // Send push notification to query
+            let push = PFPush()
+            push.setQuery(pushQuery) // Set our Installation query
+            push.setMessage("\(PFUser.currentUser()?.username ?? "") : \(content)")
+            push.sendPushInBackground()
+        }
+        
+        messageField.text = nil
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+
+extension ConversationViewController: UITableViewDataSource {
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return messages.count
+        
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCellWithIdentifier("", forIndexPath: indexPath)
+        
+        let message = messages[indexPath.row]
+        
+        cell.textLabel?.text = message["content"] as? String
+        
+        return cell
+        
+    }
+    
+    
+}
+
+
+
+

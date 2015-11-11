@@ -54,6 +54,7 @@
 		371FE6CA1BE912AC00029555 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		371FE6CD1BE915D500029555 /* UsersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
 		371FE6CF1BE915F800029555 /* ConversationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
+		379631821BEA6FCD00543278 /* closures.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = closures.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +110,7 @@
 				371FE6CA1BE912AC00029555 /* Login.storyboard */,
 				371FE6A31BE8FCA300029555 /* LaunchScreen.storyboard */,
 				371FE6A61BE8FCA300029555 /* Info.plist */,
+				379631821BEA6FCD00543278 /* closures.playground */,
 			);
 			path = Conversation;
 			sourceTree = "<group>";
@@ -368,6 +370,7 @@
 				371FE6AB1BE8FCA300029555 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
